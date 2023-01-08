@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find autonomous_drone)/worlds/obstacle_course.world"/>
+  </include>
+  <node name="obstacle_avoidance_algorithm_node" pkg="autonomous_drone" type="obstacle_avoidance_algorithm_node" />
+</launch>

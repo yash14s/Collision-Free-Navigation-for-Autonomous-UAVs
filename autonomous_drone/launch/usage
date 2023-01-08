@@ -1,0 +1,10 @@
+Simulation Usage:
+1. In terminal (A), launch the world with obstacle avoidance node
+    $ roslaunch autonomous_drone obstacle_course.launch
+2. In terminal (B), launch SITL drone   
+    i. $ conda activate py3env
+    ii. $ cd ~/catkin_ws/src/autonomous_drone/src
+    iii. $ ./startsitl.sh
+3. In terminal (C) launch navigation
+    i. $ conda activate py3env
+    ii. $ rosrun autonomous_drone safe_navigation.py
